@@ -1,7 +1,5 @@
 const fs = require('fs');
 
-
-
 const routeHandler = (req, res) => {
     const url = req.url;
     const method = req.method;
@@ -13,9 +11,6 @@ const routeHandler = (req, res) => {
             '<body><form action="/create-user" method="POST"><input type="username" name="create-user"><button id ="clickMe" type="submit">Create</button></form></body>'
           );
         res.write("</html>")
-        // if ( result ) (
-        //     url === "/create-users"
-        // )
     
         return res.end();
     }
